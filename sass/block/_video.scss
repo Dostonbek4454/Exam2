@@ -1,0 +1,10 @@
+.video{
+  width: 1240px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  &__sours{
+    width:1240px ;
+    height: 621px;
+  }
+}

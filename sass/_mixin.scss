@@ -1,0 +1,14 @@
+@mixin flexes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}@mixin bg-icon {
+  content: "";
+  width: 92px;
+  height: 92px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+

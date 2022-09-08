@@ -1,0 +1,211 @@
+.section {
+  
+  margin-top: 120px;
+  &__text{
+    width: 500px;
+  }
+  &__wrapper {
+    margin-bottom: 32px;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    color: $blackmix;
+  }
+  &__text {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 56px;
+    color: #6b6b6c;
+  }
+}
+
+.section__card {
+  width: 1179px;
+  height: 1317px;
+  display: grid;
+  grid-template-columns: 393px 393px 393px;
+  grid-template-rows: 439px 439px 439px;
+  grid-gap: 0 30px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.card {
+  background-color: white;
+  &__wrapper {
+    margin: 0 32px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: $blackmix;
+  }
+  &__text {
+    margin: 0 32px;
+    margin-bottom: 32px;
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6b6b6c;
+  }
+  &__price {
+    margin: 0 32px;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 135%;
+    color: $blackmix;
+    border-bottom: 3px solid #ffce50;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    margin-top: 300px;
+    &__wrapper {
+      margin-bottom: 32px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 125%;
+      color: $blackmix;
+    }
+    &__text {
+      font-family: "PT Sans";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 56px;
+      color: #6b6b6c;
+    }
+  }
+
+  .section__card {
+    width: 1380px;
+    height: 884px;
+    display: grid;
+    grid-template-columns: 690px;
+    grid-template-rows: 442px 442px;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .card {
+    background-color: white;
+    &__img {
+      width: 690px;
+      height: 247px;
+    }
+    &__wrapper {
+      margin: 0 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 135%;
+      color: $blackmix;
+    }
+    &__text {
+      margin: 0 32px;
+      margin-bottom: 32px;
+      font-family: "PT Sans";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6b6b6c;
+    }
+    &__price {
+      margin: 0 32px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 135%;
+      color: $blackmix;
+      border-bottom: 3px solid #ffce50;
+    }
+  }
+  .card3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section {
+    margin-top: 120px;
+    &__wrapper {
+      margin-bottom: 32px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 125%;
+      color: $blackmix;
+    }
+    &__text {
+      font-family: "PT Sans";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 56px;
+      color: #6b6b6c;
+    }
+  }
+
+  .section__card {
+    width: 345px;
+    height: 394px;
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 394px;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .card {
+    background-color: white;
+    &__img {
+      width: 345px;
+      height: 222px;
+    }
+    &__wrapper {
+      margin: 0 32px;
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      color: $blackmix;
+    }
+    &__text {
+      margin: 0 32px;
+      margin-bottom: 32px;
+      font-family: "PT Sans";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 150%;
+      color: #6b6b6c;
+    }
+    &__price {
+      margin: 0 32px;
+      font-family: "Exo 2";
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 135%;
+      color: $blackmix;
+      border-bottom: 3px solid #ffce50;
+    }
+  }
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+} ;

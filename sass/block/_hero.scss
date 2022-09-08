@@ -1,0 +1,130 @@
+.hero{
+  max-width: 1240px;
+  height: 505px;
+  position: relative;
+  @include flexes;
+  &__left{
+    width: 841px;
+    height: 792px;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    &--heading{
+      width: 500px;
+      font-family: 'Exo 2';
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 125%;
+      
+    }
+    &--text{
+      width: 500px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      padding: 40px 0px;
+    }
+    &--link{
+      width: 120px;
+      color: $blackmix;
+      border-bottom: 4px solid chocolate;
+    }
+  }
+  &__right{
+    width: 599px;
+    height: 787px;
+    background-color: $teal;
+    position: absolute;
+    z-index: 90;
+    left: 60%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    &--img{
+      width: 635px;
+      height: 505px;
+      background-image: url(./../../images/truck.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      left: 17%;
+      transform: translateY(40%);
+    } 
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero{
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 743px;
+    &__left{
+      width: 553px;
+      height: 280px;
+      justify-content: flex-start;
+      &--heading{
+        width: 500px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 125%;
+      }
+      &--text{
+        width: 523px;
+        font-weight: 400;
+      }
+      &--link{
+      }
+    }
+    &__right{
+      width: 177px;
+      height: 743px;
+      left: 80%;
+      &--img{
+        width: 725px;
+        height: 314px;
+        transform: translateY(136%);
+        background-position: center;
+        background-size: cover;
+      } 
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero{  
+    &__left{
+      z-index: 60;
+      &--heading{
+        width: 286px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 125%;
+        color: white;
+      }
+      &--text{
+        width: 344px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 150%;
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 35px;
+      }
+      &--link{
+        color: white;
+        border-bottom: 3px solid #FFCE50;
+      }
+    }
+    &__right{
+      width: 375px;
+      height: 766px;
+      left: -6%;
+      z-index: 50;
+      &--img{
+        width: 345px;
+        height: 253px;
+        left: 4%;
+        transform: translateY(160%);
+      } 
+    }
+  }
+}

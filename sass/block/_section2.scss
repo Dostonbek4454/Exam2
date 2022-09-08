@@ -1,0 +1,127 @@
+.section2 {
+  width: 1240px;
+  height: 576px;
+  margin-top: 120px;
+  &__wrapper {
+    margin-bottom: 30px;
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+  }
+}
+.img__logotip{
+  width: cover;
+  height: cover;
+}
+.section2__container {
+  display: grid;
+  grid-template-columns: 303px 303px 303px 303px;
+  grid-template-rows: 184px 184px;
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.card2{
+  border-right: 1px solid #D7D7DD;
+  box-shadow: 0px 4px 15px rgba(243, 240, 240, 0.12);
+  
+}
+.card2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+ 
+  &__desc{
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    text-align: center;
+  }
+  &__desc1{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #6B6B6C;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section2 {
+    width: 1212;
+    height: 576px;
+    &__wrapper {
+      margin-bottom: 30px;
+      font-family: "Exo 2";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 125%;
+    }
+  }
+  .section2__container {
+    display: grid;
+    grid-template-columns: 303px 303px;
+    grid-template-rows: 184px 184px 184px 184px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .card2 {
+    justify-content: space-between;
+    align-content: center;
+    &__desc {
+      width: 184px;
+      height: 21px;
+    }
+    &__desc1 {
+      width: 184px;
+      height: 15px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .section2 {
+    width: 1212;
+    height: 576px;
+    &__wrapper {
+      margin-bottom: 30px;
+      font-family: "Exo 2";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 125%;
+    }
+  }
+  .section2__container {
+    display: grid;
+    grid-template-columns: 303px 303px;
+    grid-template-rows: 184px 184px 184px 184px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .card2 {
+    justify-content: space-between;
+    align-content: center;
+    &__desc {
+      width: 184px;
+      height: 21px;
+    }
+    &__desc1 {
+      width: 184px;
+      height: 15px;
+    }
+  }
+  .card1 {
+    display: none;
+  }
+}

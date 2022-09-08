@@ -1,0 +1,207 @@
+.serves{
+  max-width: 1240px;
+  height: 341px;
+  background-color: #ffffff;
+  padding: 40px 80px 56px 80px;
+  position: relative;
+  z-index: 1000;
+  margin-top: 67px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  @include flexes;
+  &__similar{
+    width: 334px;
+    height: 252px;
+  }
+  &__one{
+    border-right: 1px solid #D7D7DD;
+    &--icon::before{
+      @include bg-icon;
+      background-image: url(./../../images/fabriq.png);
+    }
+    &--heading{
+     
+    }
+    &--text{
+   
+    }
+  }
+  &__two{
+    border-right: 1px solid #D7D7DD;
+    &--icon::before{
+      @include bg-icon;
+      background-image: url(./../../images/excal.png);
+    }
+    &--heading{
+     
+    }
+    &--text{
+   
+    }
+  }
+  &__three{
+    
+    &--icon::before{
+      @include bg-icon;
+      background-image: url(./../../images/pochta.png);
+    }
+    &--heading{
+     
+    }
+    &--text{
+   
+    }
+  }
+  .similar__heading{
+    width: 228px;
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: $blackmix;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .similar__text{
+    width: 228px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B6B6C;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .serves{
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: none;
+    &__similar{ 
+    }
+    &__one{
+      display: flex;
+      width: 690px;
+      height: 164px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+      border-right: none;
+      padding: 35px 32px 47px 32px;
+      &--icon::before{
+        margin-right: 32px;
+      }
+      &--heading{  
+      }
+      &--text{
+      }
+    }
+    &__two{
+      display: flex;
+      width: 690px;
+      height: 164px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+      border-right: none;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding: 35px 32px 47px 32px;
+      &--icon::before{
+        margin-right: 32px;
+      }
+      &--heading{
+      }
+      &--text{ 
+      }
+    }
+    &__three{
+      display: flex;
+      width: 690px;
+      height: 164px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+      border-radius: 20px;
+      padding: 35px 32px 47px 32px;
+      &--icon::before{
+        margin-right: 32px;
+      }
+      &--heading{   
+      }
+      &--text{ 
+      }
+    }
+    .similar__heading{
+      width: 394px;
+      margin-top: 0;
+    }
+    .similar__text{
+      width: 394px;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .serves{
+    width: 345px;
+    height: 750px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    padding: 0;
+    padding-top: 32px;
+  
+    
+    &__similar{ 
+    }
+    &__one{
+      flex-direction: column;
+      box-shadow: none;
+      border-radius: none;
+      
+      &--icon::before{
+        
+      }
+      &--heading{  
+      }
+      &--text{
+      }
+    }
+    &__two{
+      flex-direction: column;
+      box-shadow: none;
+      border-radius: none;
+      &--icon::before{
+      
+      }
+      &--heading{
+      }
+      &--text{ 
+      }
+    }
+    &__three{
+      flex-direction: column;
+      box-shadow: none;
+      border-radius: none;
+     
+      &--icon::before{
+        
+      }
+      &--heading{   
+      }
+      &--text{ 
+      }
+    }
+    .similar__heading{
+      width: 228px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-size: 18px;
+      line-height: 135%;
+
+    }
+    .similar__text{
+     width: 289px;
+     font-size: 15px;
+      line-height: 150%;
+    }
+    &__similar{
+      width: 289px;
+      height: 240px;
+      padding: 0;
+    }
+  }
+}
